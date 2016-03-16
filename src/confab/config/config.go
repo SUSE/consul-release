@@ -44,6 +44,7 @@ type ConfigConsulAgent struct {
 
 type ConfigConsulAgentServers struct {
 	LAN []string
+	WAN []string
 }
 
 func Default() Config {
@@ -59,6 +60,7 @@ func Default() Config {
 			Agent: ConfigConsulAgent{
 				Servers: ConfigConsulAgentServers{
 					LAN: []string{},
+					WAN: []string{},
 				},
 			},
 		},
